@@ -1,5 +1,7 @@
 package com.boot.controller;
 
+import java.security.Principal;
+
 import org.apache.catalina.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,4 +23,12 @@ public class UserController {
 	public CommonResult test(User user){
 		return CommonResult.success(null, null);
 	}
+	
+	@RequestMapping("/getUser")
+	@ResponseBody
+	public CommonResult test(User user, Principal principal){
+		System.out.println(principal);
+		return CommonResult.success(null, null);
+	}
+	
 }
