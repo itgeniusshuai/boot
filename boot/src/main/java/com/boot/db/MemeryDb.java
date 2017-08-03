@@ -17,6 +17,7 @@ public class MemeryDb {
 		memeryDb.put("jetty", DigestUtils.md5DigestAsHex("123".getBytes()));
 		memeryDb.put("jack", DigestUtils.md5DigestAsHex("123".getBytes()));
 		memeryDb.put("ketty", DigestUtils.md5DigestAsHex("123".getBytes()));
+		memeryDb.put("ketty1", DigestUtils.md5DigestAsHex("123".getBytes()));
 	}
 	
 	public static int addUser(User user){
